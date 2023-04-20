@@ -29,11 +29,22 @@ more action -> SDK Manger
 Para construir componentes nuevos necesitamos los componentes core. Los core son los componetes base y todos los componentes que querramos crear necesitan estar compuestos de los CORE COMPONENTS.
 Punto negro en la documentacion es funcionalidad para IOS y si es verde es Android.
 
-alendarevents
+alendarevents repo de la clase. 
 https://github.com/sotopro/calendarevents
 
-Estilos React native
+- Estilos React native
 https://reactnative.dev/docs/style
 
-Espacio seguro -> es un componente que indica desde donde se puede rendererizar un componente. Que la aplicacion no se monte sobre los componentes del dispositivo como el island de iphone. 
+- Espacio seguro -> es un componente que indica desde donde se puede rendererizar un componente. Que la aplicacion no se monte sobre los componentes del dispositivo como el island de iphone. 
 
+- William Candillon -> Animations with React Native. https://github.com/wcandillon
+
+- React Native CLI 
+
+# 19/04/2023
+- Eventos en RN (click, mousevent, hover, focus)
+- onChangeText() -> me retorna el texto que esta escrito dentro del campo
+- ejecutar una funcion sin parentesis en onPress -> estoy indicandole que se llama como un callback, por que me retorna el resultado de la funcion que yo le indique. 
+- Virtual DOM vs Shadow DOM vs DOM https://www.testim.io/blog/shadow-dom-vs-virtual-dom/
+- Listas virualizadas -> FaltList : renderiza basicamente una lista que sopora diferentes funcionalidades. Es un componente con varias funcionalidades dentro. 
+- Modales -> 
