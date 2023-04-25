@@ -47,4 +47,32 @@ https://reactnative.dev/docs/style
 - ejecutar una funcion sin parentesis en onPress -> estoy indicandole que se llama como un callback, por que me retorna el resultado de la funcion que yo le indique. 
 - Virtual DOM vs Shadow DOM vs DOM https://www.testim.io/blog/shadow-dom-vs-virtual-dom/
 - Listas virualizadas -> FaltList : renderiza basicamente una lista que sopora diferentes funcionalidades. Es un componente con varias funcionalidades dentro. 
-- Modales -> 
+- Modales
+
+# 24/4/2023
+- Diseño y arquitectura -> debuggear aplicacion.
+https://docs.google.com/document/d/1NhUM2BOppFTvwI0RRNMszuOnsiPRth_weGU99X32EzM/edit
+- DEBUG -> bug: falla dentro de la aplicacion de motivos de sintaxis, de logica, errores de componentes o modulos mal cargados (mal proceso de integracion). El debbugin es encontrar y eliminar errores. Integrar el proceso de debuggin al proceso de desarrollo. Lo normal es ir consoleando todo para ir probando. 
+ - Debbugear -> 
+    * leer error
+    * console.log, console.warn
+    * chrome debugger y breakpoints. 
+    ¿Cuáles son las mejores prácticas para depurar una aplicación de React Native? ¿Cuáles son las herramientas que recomiendas para depurar aplicaciones de React Native?
+- Estructuras -> de diseño para ir creando componentes -> a largo plazo sea mas facil de escalar y se entienda claramente que se debe hacer. 
+- Patron modular -> viene de la programacion funcional. Si yo utilizo un framework basado en JS debo aprovechar toda la capacidad de la plataforma (JS) para abstraer ciertos conceptos de JS y aplicarlos en cualquier tecnologia. 
+
+## PREGUNTAS PARA HACER 
+- ¿Cómo estructurarías un proyecto de React Native para que sea escalable y fácil de mantener? ¿Podrías explicar brevemente los principios de una buena arquitectura de proyecto en React Native?
+- ¿Cómo seleccionas los componentes adecuados para un proyecto de React Native? ¿Cuáles son los factores que consideras al elegir un componente?
+- ¿Cómo manejas la comunicación entre componentes en un proyecto de React Native? ¿Cuáles son las mejores prácticas para la comunicación entre componentes?
+- ¿Cuáles son los errores comunes que has visto en los proyectos de React Native que has trabajado en el pasado? ¿Cómo los evitas y qué consejos darías a otros desarrolladores para evitarlos?
+- ¿Qué estrategias utilizas para depurar y solucionar errores en React Native?
+- ¿Cómo te aseguras de que tus componentes funcionen correctamente en diferentes dispositivos y tamaños de pantalla?
+- ¿Cuál es tu enfoque para escribir pruebas unitarias y de integración para tus componentes de React Native?
+- ¿Qué herramientas utilizas para realizar pruebas de UI en React Native?
+- ¿Cómo evalúas la calidad del código de tus componentes de React Native?
+- ¿Qué técnicas utilizas para optimizar el rendimiento de tus componentes de React Native?
+- ¿Cómo manejas el estado y la lógica de tus componentes para hacerlos más fáciles de depurar y mantener?
+- ¿Cómo abordas la compatibilidad de tu aplicación con diferentes versiones de React Native y sus dependencias?
+- ¿Qué prácticas recomendadas sigues para mantener la calidad y la estabilidad de tus componentes de React Native a medida que la aplicación crece y evoluciona?
+- ¿Qué herramientas y servicios de terceros recomiendas para mejorar el proceso de depuración y prueba de componentes de React Native?

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Text, View, TextInput, Button, FlatList, TouchableOpacity, Modal } from 'react-native';
 import {styles} from "./styles"
+import {Input} from "./components/"
 
 export default function App() {
   const [text, setText] = useState('');
@@ -46,15 +47,13 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.inputContainer}>
-        <TextInput 
-          placeholder='Enter your event' 
-          style={styles.input}
-          value={text}
-          onChangeText={(text) => setText(text)}
-        />
-        <Button title='Add' color={color} onPress={onAddEvent}/>
-      </View>
+      <Input 
+        color={color} 
+        onChangeText={(text)=> setText(text)} 
+        onHandlerButton={onAddEvent} 
+        placeholder={"Enter your event"} 
+        value={text}
+      />
       <View style={styles.listContainer}>
         <FlatList 
           renderItem={renderItem}
