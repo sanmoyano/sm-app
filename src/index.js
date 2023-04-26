@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Text, View, TextInput, Button, FlatList, TouchableOpacity, Modal } from 'react-native'
+import { Text, View, FlatList, TouchableOpacity } from 'react-native'
 import { styles } from './styles'
-import { Input } from './components/'
+import { Input, CustomModal } from './components/'
 
 export default function App () {
   const [text, setText] = useState('')
@@ -39,7 +39,7 @@ export default function App () {
   }
 
   const renderItem = ({ item }) => (
-    <TouchableOpacity style={styles.itemContainer} onPress={() => onHandlerEvent(item.id)}>
+    <TouchableOpacity style={styles.itemListContainer} onPress={() => onHandlerEvent(item.id)}>
       <Text style={styles.item}>{item.value}</Text>
     </TouchableOpacity>
   )
@@ -61,27 +61,8 @@ export default function App () {
           alwaysBounceVertical={false}
         />
       </View>
-      <Modal visible={modalVisible} animationType='slide'>
-        <View style={styles.modalContainer}>
-          <Text style={styles.modalTitle}>Event Detail</Text>
-          <View style={styles.modalDetailContainer}>
-            <Text style={styles.modalDetailMessage}>Are you sure to delete this item?</Text>
-            <Text style={styles.selectedEvent}>{selectedEvent?.value}</Text>
-          </View>
-          <View style={styles.buttonContainer}>
-            <Button
-              title='Cancel'
-              color={color}
-              onPress={() => onHandlerCancelModal()}
-            />
-            <Button
-              title='Delete'
-              color={color}
-              onPress={() => onHandlerDeleteEvent(selectedEvent.id)}
-            />
-          </View>
-        </View>
-      </Modal>
+      <CustomModal isVisible={modalVisible} color={color} onCancel={onHandlerCancelModal} onDelete={onHandlerDeleteEvent} animateType='slide' selectedEvent={selectedEvent} />
+
     </View>
   )
 }

@@ -76,3 +76,15 @@ https://docs.google.com/document/d/1NhUM2BOppFTvwI0RRNMszuOnsiPRth_weGU99X32EzM/
 - ¿Cómo abordas la compatibilidad de tu aplicación con diferentes versiones de React Native y sus dependencias?
 - ¿Qué prácticas recomendadas sigues para mantener la calidad y la estabilidad de tus componentes de React Native a medida que la aplicación crece y evoluciona?
 - ¿Qué herramientas y servicios de terceros recomiendas para mejorar el proceso de depuración y prueba de componentes de React Native?
+
+# ESLint
+npm I -D eslint eslint-config-universe prettier
+
+# .prettierrc
+{
+    "printWidth": 100,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "bracketSameLine": true,
+    "trailingComma": "es5"
+}
