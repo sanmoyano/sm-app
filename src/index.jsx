@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Text, View, FlatList, TouchableOpacity } from 'react-native'
+import { View } from 'react-native'
 import { styles } from './styles'
-import { Input, CustomModal } from './components/'
+import { Input, CustomModal, Events } from './components'
 
 export default function App () {
   const [text, setText] = useState('')
@@ -38,12 +38,6 @@ export default function App () {
     setModalVisible(!modalVisible)
   }
 
-  const renderItem = ({ item }) => (
-    <TouchableOpacity style={styles.itemListContainer} onPress={() => onHandlerEvent(item.id)}>
-      <Text style={styles.item}>{item.value}</Text>
-    </TouchableOpacity>
-  )
-
   return (
     <View style={styles.container}>
       <Input
@@ -53,14 +47,7 @@ export default function App () {
         placeholder='Enter your event'
         value={text}
       />
-      <View style={styles.listContainer}>
-        <FlatList
-          renderItem={renderItem}
-          data={events}
-          keyExtractor={(item) => item.id}
-          alwaysBounceVertical={false}
-        />
-      </View>
+      <Events events={events} onSelectItem={onHandlerEvent} />
       <CustomModal isVisible={modalVisible} color={color} onCancel={onHandlerCancelModal} onDelete={onHandlerDeleteEvent} animateType='slide' selectedEvent={selectedEvent} />
 
     </View>

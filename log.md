@@ -77,10 +77,14 @@ https://docs.google.com/document/d/1NhUM2BOppFTvwI0RRNMszuOnsiPRth_weGU99X32EzM/
 - ¿Qué prácticas recomendadas sigues para mantener la calidad y la estabilidad de tus componentes de React Native a medida que la aplicación crece y evoluciona?
 - ¿Qué herramientas y servicios de terceros recomiendas para mejorar el proceso de depuración y prueba de componentes de React Native?
 
-# ESLint
+## 26/04/2023
+Repo proyecto nuevo -> https://github.com/sotopro/peoplevsnumbers
+## ESLint
 npm I -D eslint eslint-config-universe prettier
-
-# .prettierrc
+"eslintConfig": {
+    "extends": "universe/native"
+  }
+## .prettierrc
 {
     "printWidth": 100,
     "tabWidth": 2,
@@ -88,3 +92,6 @@ npm I -D eslint eslint-config-universe prettier
     "bracketSameLine": true,
     "trailingComma": "es5"
 }
+# shadow generator
+https://ethercreative.github.io/react-native-shadow-generator/
+
