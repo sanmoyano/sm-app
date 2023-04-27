@@ -1,7 +1,6 @@
 import React from 'react'
 import EventItem from './item'
-import { View, FlatList } from 'react-native'
-// import styles from './styles'
+import { FlatList } from 'react-native'
 
 const Events = ({ events, onSelectItem }) => {
   const renderItem = ({ item }) => (
@@ -9,14 +8,12 @@ const Events = ({ events, onSelectItem }) => {
   )
   const keyExtractor = (item) => item.id
   return (
-  // <View style={styles.listContainer}>
     <FlatList
       renderItem={renderItem}
       data={events}
       keyExtractor={keyExtractor}
       alwaysBounceVertical={false}
     />
-  // </View>
   )
 }
 
