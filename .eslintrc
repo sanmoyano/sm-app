@@ -1,8 +1,0 @@
-{
-  "parser": "@babel/eslint-parser",
-  "extends": ["standard", "standard-jsx", "standard-react"],
-  "rules": {
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": 0
-  }
-}
